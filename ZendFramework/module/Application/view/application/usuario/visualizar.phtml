@@ -1,0 +1,8 @@
+<?php
+foreach ($this->dados as $model) {
+    printf('<a href="/ZendFramework/public/usuario/%d">%d - %s</a> 
+        <a href="/ZendFramework/public/usuario/excluir/%d"> - Excluir </a><br>', $model->id, $model->id, $model->email, $model->id);
+
+}
+
+printf('<br><a href="/ZendFramework/public/usuario/cadastrar"> Cadastrar </a><br>');
